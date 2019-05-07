@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+body {
+  margin: 0;
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: rgb(244, 194, 97);
+}
+
+#navLogo {
+  height: calc(3rem + ((1vw - 4.8px) * 1.125));
+}
+
+#navLogo img {
+  height: 100%;
+  width: auto;
+}
+
+#navList a {
+  font-family: 'Dosis';
+  text-decoration: none;
+  font-size: calc(1rem + ((1vw - 4.8px) * 1.5));
+  padding: 0 calc(1rem + ((1vw - 4.8px) * 1));
+  color: white;
+}
