@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Dosis|Caveat|Roboto+Condensed');
 
 body {
   margin: 0;
@@ -9,8 +9,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 2em;
+  padding: 1em calc(2rem + ((1vw - 4.8px) * 5));
   background-color: rgb(244, 194, 97);
+  user-select: none;
 }
 
 #navLogo {
@@ -28,4 +29,69 @@ body {
   font-size: calc(1rem + ((1vw - 4.8px) * 1.5));
   padding: 0 calc(1rem + ((1vw - 4.8px) * 1));
   color: white;
+  text-shadow: 0 0 5px #000000;
+}
+
+.content {
+  height: calc(100vh - 5rem - ((1vw - 4.8px) * 1.125));
+  background-color: rgb(244, 194, 97);
+  display: flex;
+  flex-direction: row;
+}
+
+.homeText {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-shadow: 1px 1px 2px #000000;
+  user-select: none;
+}
+
+.homeText h1 {
+  font-family: 'Caveat';
+  margin: 0;
+  font-size: calc(1.5rem + ((1vw - 4.8px) * 2));
+  line-height: 1em;
+}
+
+.homeText h1:first-child {
+  margin-left: 3em;
+}
+
+.homeText h1:nth-child(2) {
+  font-size: calc(2.5rem + ((1vw - 4.8px) * 4));
+}
+
+.homeText h1:nth-child(3) {
+  margin-right: 3em;
+}
+
+.homeText h1:nth-child(4), .homeText h1:nth-child(2) span {
+  font-size: calc(2rem + ((1vw - 4.8px) * 3));
+}
+
+.homeText h2 {
+  font-family: 'Roboto Condensed';
+  font-size: calc(.75rem + ((1vw - 4.8px) * 1));
+  padding: 2em calc(1rem + ((1vw - 4.8px) * 10));
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.homePic {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.homePic img {
+  filter: drop-shadow(0 0 12px #000);
+  width: 75%;
+  height: auto;
 }
