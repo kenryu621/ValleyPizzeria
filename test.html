@@ -8,6 +8,9 @@
   <title>Valley Pizzeria</title>
   <link rel="stylesheet" href="CSS/master.css">
   <link rel="icon" href="IMG/misc/logo.png">
+  <script src="JS/master.js" charset="utf-8"></script>
+  <script src="library/full-page-scroll.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="library/full-page-scroll.css">
 </head>
 
 <body>
@@ -21,19 +24,45 @@
       <a href="">Contact</a>
     </div>
   </div>
-  <div class="content">
-    <div class="homeText">
-      <h1>Get</h1>
-      <h1>Incredible <span>Taste</span></h1>
-      <h1>with</h1>
-      <h1>Every Bite</h1>
-      <h2>"We proudly bake and serve fresh, hot pizzas made only from the best ingredients. The combination of our hand-rolled, made daily dough, our special blend of cheeses, sauces and toppings ensure that you always receive incredible taste with
-        every bite." -- Seng Kim, Founder of the Valley Pizzeria</h2>
-    </div>
-    <div class="homePic">
-      <img src="http://storage.googleapis.com/bro-cdn1/zgrid/themes/10307/images/home/pizza.png" alt="">
-    </div>
+  <div id="main" class="scroll-container">
+    <section class="content">
+      <div class="homeText">
+        <h1>Get</h1>
+        <h1>Incredible <span>Taste</span></h1>
+        <h1>with</h1>
+        <h1>Every Bite</h1>
+        <h2>"We proudly bake and serve fresh, hot pizzas made only from the best ingredients. The combination of our hand-rolled, made daily dough, our special blend of cheeses, sauces and toppings ensure that you always receive incredible taste
+          with
+          every bite." -- Seng Kim, Founder of the Valley Pizzeria</h2>
+      </div>
+      <div class="homePic">
+        <img src="http://storage.googleapis.com/bro-cdn1/zgrid/themes/10307/images/home/pizza.png" alt="">
+      </div>
+    </section>
+    <section class="content">
+      <div class="homeText">
+        <h1>Get</h1>
+        <h1>Incredible <span>Taste</span></h1>
+        <h1>with</h1>
+        <h1>Every Bite</h1>
+        <h2>"We proudly bake and serve fresh, hot pizzas made only from the best ingredients. The combination of our hand-rolled, made daily dough, our special blend of cheeses, sauces and toppings ensure that you always receive incredible taste
+          with
+          every bite." -- Seng Kim, Founder of the Valley Pizzeria</h2>
+      </div>
+      <div class="homePic">
+        <img src="http://storage.googleapis.com/bro-cdn1/zgrid/themes/10307/images/home/pizza.png" alt="">
+      </div>
+    </section>
   </div>
 </body>
+<script type="text/javascript">
+  new fullScroll({
+    mainElement: 'main',
+    displayDots: true,
+    dotsPosition: 'right',
+    animateTime: 0.7,
+    animateFunction: 'ease'
+  });
+</script>
 
 </html>
