@@ -45,6 +45,7 @@ body {
   padding: calc(.1rem + ((1vw - 4.8px) * .5)) calc(1rem + ((1vw - 4.8px) * 1));
   color: white;
   text-shadow: 0 0 5px #000000;
+  transition: background-color 0.3s ease-in-out;
 }
 
 #navList div span {
@@ -81,7 +82,6 @@ body {
 .right {
   right: 0;
   transform-origin: top right;
-  transition-delay: 0.05s;
 }
 
 #navList div a:hover~.right {
@@ -92,7 +92,6 @@ body {
 .top {
   top: 0;
   transform-origin: top left;
-  transition-delay: 0.15s;
 }
 
 #navList div a:hover~.top {
@@ -103,7 +102,6 @@ body {
 .left {
   left: 0;
   transform-origin: bottom left;
-  transition-delay: 0.25s;
 }
 
 #navList div a:hover~.left {
