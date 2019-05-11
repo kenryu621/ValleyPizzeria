@@ -19,21 +19,96 @@ body {
 }
 
 #navLogo {
-  height: calc(3rem + ((1vw - 4.8px) * 1.125));
+  width: calc(10rem + ((1vw - 4.8px) * 7.5));
 }
 
 #navLogo img {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
-#navList a {
+#navList {
+  display: flex;
+  flex-direction: row;
+}
+
+#navList div {
+  display: flex;
+  position: relative;
+  margin: 0 calc(.1rem + ((1vw - 4.8px) * 1));
+}
+
+#navList div a {
   font-family: 'Dosis';
   text-decoration: none;
-  font-size: calc(1rem + ((1vw - 4.8px) * 1.5));
-  padding: 0 calc(1rem + ((1vw - 4.8px) * 1));
+  font-size: calc(1rem + ((1vw - 4.8px) * 1.125));
+  padding: calc(.1rem + ((1vw - 4.8px) * .5)) calc(1rem + ((1vw - 4.8px) * 1));
   color: white;
   text-shadow: 0 0 5px #000000;
+}
+
+#navList div span {
+  position: absolute;
+  background-color: #FF0000;
+  transition: transform .5s ease;
+  box-shadow: 0 0 2px white;
+}
+
+.bottom, .top {
+  height: 1px;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+}
+
+.left, .right {
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  transform: scaleY(0);
+}
+
+.bottom {
+  bottom: 0;
+  transform-origin: bottom right;
+}
+
+#navList div a:hover~.bottom {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.right {
+  right: 0;
+  transform-origin: top right;
+  transition-delay: 0.05s;
+}
+
+#navList div a:hover~.right {
+  transform-origin: bottom right;
+  transform: scaleY(1);
+}
+
+.top {
+  top: 0;
+  transform-origin: top left;
+  transition-delay: 0.15s;
+}
+
+#navList div a:hover~.top {
+  transform-origin: top right;
+  transform: scaleX(1);
+}
+
+.left {
+  left: 0;
+  transform-origin: bottom left;
+  transition-delay: 0.25s;
+}
+
+#navList div a:hover~.left {
+  transform-origin: top left;
+  transform: scaleY(1);
 }
 
 .scroll-container section {
