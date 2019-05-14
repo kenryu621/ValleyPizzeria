@@ -13,10 +13,10 @@
   <link rel="stylesheet" href="library/full-page-scroll.css">
 </head>
 
-<body>
+<body onresize="sectionHeight()">
   <div id="nav">
     <div id="navLogo">
-      <img src="https://static.wixstatic.com/media/c7242a_ca728d2c7f8f4a24b033a1064bef01a6~mv2.png/v1/fill/w_1403,h_326,al_c,q_85,usm_0.66_1.00_0.01/c7242a_ca728d2c7f8f4a24b033a1064bef01a6~mv2.webp" alt="">
+      <img src="IMG/misc/fullLogo.webp" alt="Valley Pizzeria Logo">
     </div>
     <div id="navList">
       <div>
@@ -60,7 +60,7 @@
       <div class="homeText" id="homePizza">
         <h1>Premium</h1>
         <h1>Pizza</h1>
-        <h2>Personal 7" - $6.99<br>Small 10" - $13.99<br>Medium 12" - $16.99<br>Large 14" - $19.99<br>Extra Large 16" - $24.99</h2>
+        <h2>We serve fresh hot pizzas made with the best ingredients; Our special blended cheeses will bring out the incredible taste with every bite. Our dough is hand rolled fresh daily! Available on original thin crust and thick crust!</h2>
       </div>
       <div class="homePic">
         <img src="https://pngriver.com/wp-content/uploads/2018/04/Download-Pizza-PNG-HD.png" alt="">
@@ -89,6 +89,17 @@
   </div>
 </body>
 <script type="text/javascript">
+  var style = document.createElement('style');
+  style.type = 'text/css';
+  document.getElementsByTagName('head')[0].appendChild(style);
+
+  function sectionHeight() {
+    let navHeight = document.getElementById('nav').clientHeight;
+    style.innerHTML = '.scroll-container section {padding-top: ' + navHeight + 'px; height: calc(100vh - ' + navHeight + 'px)}';
+  }
+
+  sectionHeight();
+
   new fullScroll({
     mainElement: 'content',
     displayDots: true,

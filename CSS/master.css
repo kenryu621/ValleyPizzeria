@@ -15,7 +15,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 1;
-  width: calc(100vw - 2rem - ((1vw - 4.8px) * 5));
+  width: calc(100vw - calc((2rem + ((1vw - 4.8px) * 5))) * 2);
 }
 
 #navLogo {
@@ -155,6 +155,7 @@ body {
   font-size: calc(.75rem + ((1vw - 4.8px) * 1));
   padding: 2em calc(1rem + ((1vw - 4.8px) * 10));
   text-shadow: 1px 1px 1px #000000;
+  line-height: 150%;
 }
 
 .homePic {
@@ -181,10 +182,6 @@ body {
   letter-spacing: .125em;
 }
 
-#homePizza h2 {
-  line-height: 180%;
-}
-
 #homeApp h1, #homeBev h1 {
   font-size: calc(2.5rem + ((1vw - 4.8px) * 4));
   margin: 0;
@@ -203,4 +200,18 @@ body {
   line-height: 300%;
   color: #808080;
   font-size: calc(.75rem + ((1vw - 4.8px) * .375));
+}
+
+@media only screen and (max-device-width: 480px) {
+  .scroll-container section {
+    flex-direction: column-reverse;
+  }
+
+  .homeText {
+    width: 100%;
+  }
+
+  .homePic {
+    width: 100%;
+  }
 }

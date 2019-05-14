@@ -15,9 +15,7 @@ body, html {
 }
 
 .scroll-container section {
-  padding-top: calc(5rem + ((1vw - 4.8px) * 1.125));
   width: 100%;
-  height: calc(100vh - 5rem - ((1vw - 4.8px) * 1.125));
 }
 
 .dots {
