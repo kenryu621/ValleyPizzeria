@@ -142,11 +142,11 @@ body {
   font-size: calc(2.5rem + ((1vw - 4.8px) * 4));
 }
 
-.homeText h1:nth-child(3) {
+.homeText div h1:nth-child(1) {
   margin-right: 3em;
 }
 
-.homeText h1:nth-child(4), .homeText h1:nth-child(2) span {
+.homeText div h1:nth-child(2), .homeText h1:nth-child(2) span {
   font-size: calc(2rem + ((1vw - 4.8px) * 3));
 }
 
@@ -203,6 +203,14 @@ body {
 }
 
 @media only screen and (max-device-width: 480px) {
+  #nav {
+    flex-direction: column;
+  }
+
+  #navList div a {
+    font-size: calc(1.5rem + ((1vw - 4.8px) * 1.125));
+  }
+
   .scroll-container section {
     flex-direction: column-reverse;
   }
@@ -211,7 +219,48 @@ body {
     width: 100%;
   }
 
+  .homeText h1:nth-child(2) {
+    font-size: calc(4.5rem + ((1vw - 4.8px) * 4));
+  }
+
+  .scroll-container section:first-child h1:first-child {
+    display: none;
+  }
+
+  .scroll-container section:first-child>div>div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .scroll-container section:first-child>div>div h1:first-child {
+    display: block;
+    margin-left: 0;
+    margin-right: .5em;
+  }
+
+  .scroll-container section:first-child>div>div h1:last-child {
+    font-size: calc(2.5rem + ((1vw - 4.8px) * 4));
+  }
+
+  .scroll-container section:first-child div h2, .scroll-container section:nth-child(3) div h2 {
+    margin: 0;
+    padding: 1.5em calc(3rem + ((1vw - 4.8px) * 10));
+  }
+
+  .homeText h2 {
+    font-size: calc(1.25rem + ((1vw - 4.8px) * 1));
+    padding: 2em calc(3rem + ((1vw - 4.8px) * 10));
+  }
+
   .homePic {
     width: 100%;
+  }
+
+  .homePic img {
+    width: 90%;
+  }
+
+  #homeApp h1, #homeBev h1 {
+    font-size: calc(5rem + ((1vw - 4.8px) * 4));
   }
 }
