@@ -40,7 +40,14 @@
     <div class="homePic">
       <img src="http://pngimg.com/uploads/cocacola/cocacola_PNG23.png" alt="">
     </div>
-    <footer>Copyright &copy; 2019 Designed by Valley Pizzeria. All rights reserved.</footer>
+    <footer>Copyright &copy;
+      <?php
+        $fromYear = 2017;
+        $thisYear = (int)date('Y');
+        echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');
+      ?>
+      Designed by Valley Pizzeria. All rights reserved.
+    </footer>
   </section>
 </div>
 </body>
