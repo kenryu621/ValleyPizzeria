@@ -11,6 +11,38 @@
   <script src="library/full-page-scroll.js" charset="utf-8"></script>
   <script src="JS/master.js" charset="utf-8"></script>
   <link rel="stylesheet" href="library/full-page-scroll.css">
+  <style>
+    #contact {
+      width: 100%;
+      padding: calc(1rem + ((1vw - 4.8px) * .5)) calc(.5rem + ((1vw - 4.8px) * 1));
+    }
+
+    #google-map {
+    width: 100%;
+    padding:
+    }
+
+    .map {
+      position: absolute;
+      margin-left: .1em;
+    }
+
+    .time-summary {
+      list-style: none;
+      position: absolute;
+      right: calc(1rem + ((1vw - 4.8px) * 5));
+      font-family: 'Roboto Condensed';
+      margin: 0;
+      font-size: calc(1rem + ((1vw - 4.8px) * 1));
+    }
+
+.people-review {
+  margin-top: 30em;
+}
+.people-review:nth-child(2) {
+  margin-top: 20em;
+}
+  </style>
 </head>
 
 <body onresize="sectionHeight()">
@@ -42,25 +74,56 @@
       </div>
     </div>
   </div>
-<div id="contact">
-<ul class="time-summary">
-	<li><h1>Open Hours</h1></li>
-	<li>
-Mon	11:00 am - 10:00 pm	
-<br>
-Tue	11:00 am - 10:00 pm	
-<br>
-Wed	11:00 am - 10:00 pm	
-<br>
-Thu	11:00 am - 10:00 pm	
-<br>
-Fri	11:00 am - 11:00 pm	
-<br>
-Sat	11:00 am - 11:00 pm	
-<br>
-Sun	11:00 am - 10:00 pm</li>
-</ul>
-</div>
+  <div id="contact">
+    <ul class="time-summary">
+      <li>Open Hours</li>
+      <li>Sun - Thur 11:00 AM - 10:00 PM</li>
+      <li>Fri - Satu 11:00 AM - 11:00 PM</li>
+      <br>
+      <li>More Business info:</li>
+      <li>Takes Reservations: No</li>
+      <li>Delivery: Yes</li>
+      <li>Take-out: Yes</li>
+      <li>Accepts Credit Cards: Yes</li>
+      <li>Accepts Apple Pay: No</li>
+      <li>Accepts Google Pay: No</li>
+      <li>Accepts Cryptocurrency: No</li>
+      <li>Good For: Lunch, Dinner</li>
+      <li>Parking Private: Lot</li>
+      <li>Bike Parking: No</li>
+      <li>Wheelchair Accessible: Yes</li>
+      <li>Good for Kids: Yes</li>
+      <li>Good for Groups: Yes</li>
+      <li>Ambience: Casual</li>
+      <li>Noise Level: Average</li>
+      <li>Alcohol: Beer & Wine Only</li>
+      <li>Outdoor Seating: No</li>
+      <li>Wi-Fi: Free</li>
+      <li>Has TV: Yes</li>
+      <li>Dogs Allowed: No</li>
+      <li>Waiter Service: No</li>
+      <li>Caters: Yes</li>
+      <li>Offers Military Discount: Yes</li>
+
+    </ul>
+
+    <div id="google-map">
+      <p class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.654939176545!2d-121.39972748436593!3d36.85073927255215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8091f62b73279b0b%3A0xed19acc48d6d0b9f!2s551+McCray+St%2C+Hollister%2C+CA+95023!5e0!3m2!1sen!2sus!4v1558041909994!5m2!1sen!2sus"
+          width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+    </div>
+    <div id="review">
+      <p class="people-review"><span class="yelp-review" data-review-id="SEqM9eU9716REozHmgqy1A" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=JvmMVHJdovxn9g7k6JsTFQ" rel="nofollow noopener">Kenneth S.</a>'s <a
+            href="https://www.yelp.com/biz/valley-pizzeria-hollister?hrid=SEqM9eU9716REozHmgqy1A" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/Y9I9Ht3rlvsNDIHFlnOFOQ" rel="nofollow noopener">Valley Pizzeria</a> on <a href="https://www.yelp.com"
+            rel="nofollow noopener">Yelp</a>
+          <script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script>
+        </span></p>
+      <p class="people-review-two"><span class="yelp-review" data-review-id="IVhtrgezlQVCra-QtddzPA" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=r_yqznDjBQfjPMpoOGS72w" rel="nofollow noopener">Tracey P.</a>'s
+          <a href="https://www.yelp.com/biz/valley-pizzeria-hollister?hrid=IVhtrgezlQVCra-QtddzPA" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/Y9I9Ht3rlvsNDIHFlnOFOQ" rel="nofollow noopener">Valley Pizzeria</a> on <a href="https://www.yelp.com"
+            rel="nofollow noopener">Yelp</a>
+          <script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script>
+        </span></p>
+    </div>
+  </div>
 
 
 
@@ -73,7 +136,7 @@ Sun	11:00 am - 10:00 pm</li>
 
   function sectionHeight() {
     let navHeight = document.getElementById('nav').clientHeight;
-    style.innerHTML = '#contact {padding-top: ' + navHeight + 'px; height: calc(100vh - ' + navHeight + 'px)}';
+    style.innerHTML = '#contact {padding-top: ' + navHeight + 'px;}';
   }
 
   sectionHeight();
@@ -87,11 +150,4 @@ Sun	11:00 am - 10:00 pm</li>
   });
 </script>
 
-<style>
-	
-	.time-summary {
-		list-style: none;
-	}
-	</style>
-	
 </html>
