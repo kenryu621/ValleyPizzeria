@@ -8,7 +8,9 @@
   <title>Valley Pizzeria</title>
   <link rel="stylesheet" href="CSS/master.css">
   <link rel="icon" href="IMG/misc/logo.png">
+  <script src="library/full-page-scroll.js" charset="utf-8"></script>
   <script src="JS/master.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="library/full-page-scroll.css">
 </head>
 
 <body onresize="sectionHeight()">
@@ -40,9 +42,56 @@
       </div>
     </div>
   </div>
-  <div class="content">
+<div id="contact">
+<ul class="time-summary">
+	<li><h1>Open Hours</h1></li>
+	<li>
+Mon	11:00 am - 10:00 pm	
+<br>
+Tue	11:00 am - 10:00 pm	
+<br>
+Wed	11:00 am - 10:00 pm	
+<br>
+Thu	11:00 am - 10:00 pm	
+<br>
+Fri	11:00 am - 11:00 pm	
+<br>
+Sat	11:00 am - 11:00 pm	
+<br>
+Sun	11:00 am - 10:00 pm</li>
+</ul>
+</div>
 
-  </div>
+
+
+
 </body>
+<script type="text/javascript">
+  var style = document.createElement('style');
+  style.type = 'text/css';
+  document.getElementsByTagName('head')[0].appendChild(style);
 
+  function sectionHeight() {
+    let navHeight = document.getElementById('nav').clientHeight;
+    style.innerHTML = '#contact {padding-top: ' + navHeight + 'px; height: calc(100vh - ' + navHeight + 'px)}';
+  }
+
+  sectionHeight();
+
+  new fullScroll({
+    mainElement: 'content',
+    displayDots: true,
+    dotsPosition: 'right',
+    animateTime: 1,
+    animateFunction: 'ease'
+  });
+</script>
+
+<style>
+	
+	.time-summary {
+		list-style: none;
+	}
+	</style>
+	
 </html>
