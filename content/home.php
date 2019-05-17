@@ -21,7 +21,7 @@
       <h2>We serve fresh hot pizzas made with the best ingredients; Our special blended cheeses will bring out the incredible taste with every bite. Our dough is hand rolled fresh daily! Available on original thin crust and thick crust!</h2>
     </div>
     <div class="homePic">
-      <img src="IMG/food/homeAppe.webp" alt="Wings">
+      <img src="IMG/food/homePizze.webp" alt="Pizza">
     </div>
   </section>
   <section>
@@ -40,7 +40,7 @@
       <h2>Pepsi, Coca Cola, Sprite, Beer, anything you want!<br>Small Soft Drinks are refillable.<br>Soft Drinks are for to go.<br>And 2-Liter Sodas are for to go or delivery only.</h2>
     </div>
     <div class="homePic">
-      <img src="http://pngimg.com/uploads/cocacola/cocacola_PNG23.png" alt="">
+      <img src="IMG/food/homeSoda.webp" alt="Soda">
     </div>
     <footer>Copyright &copy;
       <?php
