@@ -266,10 +266,87 @@ body {
 }
 
 /* Menu */
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.content>div {
+  display: flex;
+  flex-direction: row;
+}
+
 .menuImg {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-image: url();
+  background-image: url(../IMG/design.jpg);
+  height: auto;
+  width: 40%;
+}
+
+.menuText {
+  width: 60%;
+  padding: 1em;
+}
+
+.menuText * {
+  font-family: 'Roboto Condensed';
+  font-weight: normal;
+  margin: 0;
+}
+
+.menuText h2 {
+  text-align: center;
+  line-height: 160%;
+  font-size: calc(1.25rem + ((1vw - 4.8px) * 1));
+  background-color: #29854F;
+  color: white;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: row;
+  padding: calc(.5rem + ((1vw - 4.8px) * .25)) 0;
+}
+
+.menuItem>div:first-child {
+  width: 80%;
+}
+
+.menuItem>div:first-child>* {
+  line-height: 160%;
+}
+
+.menuItem>div:last-child {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menuItem>div:first-child h3 {
+  color: #C2002F;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.menuItem>div:first-child h4 {
+  font-size: 1em;
+  text-transform: capitalize;
+}
+
+.menuItem>div:first-child h4>span {
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
+.menuItem>div:last-child h3 {
+  font-size: 1.5em;
+  text-align: center;
+  padding: .25em 0;
+  margin: 0 1em;
+  border-bottom: 1px solid black;
+  line-height: 140%;
 }
