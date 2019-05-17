@@ -41,8 +41,25 @@
     </div>
   </div>
   <div class="content">
-
+    <div class="menuPizza">
+      <div class="menuImg"></div>
+      <div class="menuText">
+        <h2 class="menuTitle">Pizza</h2>
+      </div>
+    </div>
   </div>
 </body>
+<script>
+  var style = document.createElement('style');
+  style.type = 'text/css';
+  document.getElementsByTagName('head')[0].appendChild(style);
+
+  function sectionHeight() {
+    let navHeight = document.getElementById('nav').clientHeight;
+    style.innerHTML = '.content {padding-top: ' + navHeight + 'px;}';
+  }
+
+  sectionHeight();
+</script>
 
 </html>
