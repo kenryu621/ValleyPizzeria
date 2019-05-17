@@ -11,7 +11,7 @@
         with every bite." -- Seng Kim, Founder of the Valley Pizzeria</h2>
     </div>
     <div class="homePic">
-      <img src="http://storage.googleapis.com/bro-cdn1/zgrid/themes/10307/images/home/pizza.png" alt="">
+      <img src="IMG/food/homePizza.webp" alt="Pizza">
     </div>
   </section>
   <section>
@@ -21,7 +21,7 @@
       <h2>We serve fresh hot pizzas made with the best ingredients; Our special blended cheeses will bring out the incredible taste with every bite. Our dough is hand rolled fresh daily! Available on original thin crust and thick crust!</h2>
     </div>
     <div class="homePic">
-      <img src="https://pngriver.com/wp-content/uploads/2018/04/Download-Pizza-PNG-HD.png" alt="">
+      <img src="IMG/food/homeAppe.webp" alt="Wings">
     </div>
   </section>
   <section>
@@ -31,7 +31,7 @@
         boneless wings as another option.</h2>
     </div>
     <div class="homePic">
-      <img src="http://www.sccpre.cat/png/big/61/611710_hot-wings-png.png" alt="">
+      <img src="IMG/food/homeAppe.webp" alt="Wings">
     </div>
   </section>
   <section id="footer">
