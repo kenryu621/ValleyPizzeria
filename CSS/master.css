@@ -370,3 +370,7 @@ body {
   font-size: calc(.75rem + ((1vw - 4.8px) * .375));
   background-color: rgb(244, 194, 97);
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+}

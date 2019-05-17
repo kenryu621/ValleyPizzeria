@@ -3,8 +3,10 @@
     <div class="homeText">
       <h1>Get</h1>
       <h1>Incredible <span>Taste</span></h1>
-      <h1>with</h1>
-      <h1>Every Bite</h1>
+      <div>
+        <h1>with</h1>
+        <h1>Every Bite</h1>
+      </div>
       <h2>"We proudly bake and serve fresh, hot pizzas made only from the best ingredients. The combination of our hand-rolled, made daily dough, our special blend of cheeses, sauces and toppings ensure that you always receive incredible taste
         with every bite." -- Seng Kim, Founder of the Valley Pizzeria</h2>
     </div>
@@ -16,7 +18,7 @@
     <div class="homeText" id="homePizza">
       <h1>Premium</h1>
       <h1>Pizza</h1>
-      <h2>Personal 7" - $6.99<br>Small 10" - $13.99<br>Medium 12" - $16.99<br>Large 14" - $19.99<br>Extra Large 16" - $24.99</h2>
+      <h2>We serve fresh hot pizzas made with the best ingredients; Our special blended cheeses will bring out the incredible taste with every bite. Our dough is hand rolled fresh daily! Available on original thin crust and thick crust!</h2>
     </div>
     <div class="homePic">
       <img src="https://pngriver.com/wp-content/uploads/2018/04/Download-Pizza-PNG-HD.png" alt="">
