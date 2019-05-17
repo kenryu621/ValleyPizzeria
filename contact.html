@@ -8,13 +8,11 @@
   <title>Valley Pizzeria</title>
   <link rel="stylesheet" href="CSS/master.css">
   <link rel="icon" href="IMG/misc/logo.png">
-  <script src="library/full-page-scroll.js" charset="utf-8"></script>
   <script src="JS/master.js" charset="utf-8"></script>
-  <link rel="stylesheet" href="library/full-page-scroll.css">
   <style>
     #contact {
       width: 100%;
-      padding: calc(1rem + ((1vw - 4.8px) * .5)) calc(.5rem + ((1vw - 4.8px) * 1));
+      padding: calc(1rem + ((1vw - 4.8px) * .5)) 0;
     }
 
     #google-map {
@@ -36,12 +34,13 @@
       font-size: calc(1rem + ((1vw - 4.8px) * 1));
     }
 
-.people-review {
-  margin-top: 30em;
-}
-.people-review:nth-child(2) {
-  margin-top: 20em;
-}
+    .people-review {
+      margin-top: 30em;
+    }
+
+    .people-review:nth-child(2) {
+      margin-top: 20em;
+    }
   </style>
 </head>
 
@@ -80,7 +79,7 @@
       <li>Sun - Thur 11:00 AM - 10:00 PM</li>
       <li>Fri - Satu 11:00 AM - 11:00 PM</li>
       <br>
-      <li>More Business info:</li>
+      <li>More Business info</li>
       <li>Takes Reservations: No</li>
       <li>Delivery: Yes</li>
       <li>Take-out: Yes</li>
@@ -140,14 +139,6 @@
   }
 
   sectionHeight();
-
-  new fullScroll({
-    mainElement: 'content',
-    displayDots: true,
-    dotsPosition: 'right',
-    animateTime: 1,
-    animateFunction: 'ease'
-  });
 </script>
 
 </html>
