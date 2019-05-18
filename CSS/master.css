@@ -348,12 +348,12 @@ body {
 }
 
 .menuItem>div:first-child h4>span {
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 1.1em;
 }
 
 .menuItem>div:last-child h3 {
-  font-size: 1.5em;
+  font-size: calc(.75rem + ((1vw - 4.8px) * 1));
   text-align: center;
   padding: .25em 0;
   margin: 0 1em;
@@ -373,4 +373,67 @@ body {
 
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+/* Contact */
+#contact {
+  display: flex;
+  flex-direction: row;
+}
+
+#contact>div {
+  width: 33.3%;
+  flex-direction: column;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+#contact>div>h3, #contact>div>h4 {
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  line-height: 160%;
+  font-size: calc(1rem + ((1vw - 4.8px) * .25));
+}
+
+#contact>div>h3 {
+  font-weight: bold;
+}
+
+#contact>div>h4 {
+  font-weight: normal;
+  color: #333333;
+}
+
+.contactLeft {
+  border-right: 1px solid black;
+  text-align: right;
+}
+
+.contactRight {
+  text-align: left;
+  border-left: 1px solid black;
+}
+
+.contactRight>h4>span {
+  font-weight: bold;
+}
+
+.map {
+  overflow: hidden;
+  padding-bottom: 90%;
+  position: relative;
+  height: 0;
+  box-shadow: 0 0 5px grey;
+}
+
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.contactCenter>iframe {
+  margin: .5em 0;
 }
